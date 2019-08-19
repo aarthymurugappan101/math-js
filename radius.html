@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function Circle(radius){
+            this.radius = radius;
+
+            this.getarea = function(){
+                return Math.PI*this.radius*this.radius;
+            }
+        }
+        while (true){
+            var radius = prompt("what is the radius of the circle you want to create?");
+            var circle1 = new Circle(radius);
+            alert("radius:"+circle1.radius+ "\nArea:"+circle1.getarea());
+        }
+        var circle1 = new Circle(2);
+        alert(circle1.getarea());
+    </script>
+</html>
